@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func weightChanged(_ sender: UISlider) {
-        weightValueLabel.text = String(format: "%.1fKg", sender.value)
+        weightValueLabel.text = String(format: "%.0fKg", sender.value)
     }
     
     override func viewDidLoad() {
