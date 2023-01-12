@@ -34,6 +34,8 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "resultSegue" {
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.bmiText = calculator.getBmiText()
+            destinationVC.adviceText = calculator.getAdvice()
+            destinationVC.backgroundColor = calculator.getColor()
         }
     }
     override func viewDidLoad() {
