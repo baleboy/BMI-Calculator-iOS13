@@ -12,11 +12,10 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var background: UIImageView!
     
-    var bmiText: String = ""
-    var adviceText: String = ""
-    var backgroundColor: UIColor = UIColor.white
+    var bmiText: String?
+    var adviceText: String?
+    var color: UIColor?
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -27,6 +26,6 @@ class ResultViewController: UIViewController {
 
         bmiLabel.text = bmiText
         messageLabel.text = adviceText
-        background.backgroundColor  = backgroundColor
+        view.backgroundColor = color
     }
 }

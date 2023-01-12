@@ -208,7 +208,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="background" destination="r83-N3-Ash" id="kiE-wi-tfp"/>
                         <outlet property="bmiLabel" destination="VU9-2W-Sd5" id="gXp-3g-c5E"/>
                         <outlet property="messageLabel" destination="9IV-CT-mxw" id="sIc-rG-hPV"/>
                     </connections>
